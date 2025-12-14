@@ -32,7 +32,7 @@ except:
    st.stop()
 
 
-Create BigQuery table if not exists
+# Create BigQuery table if not exists
 def setup_bq_table(bq_client):
    dataset_id = f"{PROJECT_ID}.{DATASET}"
    table_id = f"{dataset_id}.{TABLE}"
